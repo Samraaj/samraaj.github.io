@@ -31,7 +31,17 @@ const form = document.forms['orderForm'];
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
+    try{
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then( response => {
+            alert('successfully posted');
+            console.log('Success!', response);
+        }, cause => {
+            console.log('cause?', cause);
+        })
+        .catch(error => console.error('Error!', error.message))
+    } catch (err) {
+        console.log("err", err.message);
+    }
+    
 });
