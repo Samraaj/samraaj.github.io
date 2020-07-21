@@ -25,23 +25,19 @@ function updateTotal() {
 
 //https://script.google.com/macros/s/AKfycbyzHZyynvDl8gcTHJyJ9qb6uaJQaE2iZMqvOVAntZ6cRyZgRg/exec
 //https://script.google.com/macros/s/AKfycbyzHZyynvDl8gcTHJyJ9qb6uaJQaE2iZMqvOVAntZ6cRyZgRg/exec
+//https://script.google.com/macros/s/AKfycbyzHZyynvDl8gcTHJyJ9qb6uaJQaE2iZMqvOVAntZ6cRyZgRg/exec
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyzHZyynvDl8gcTHJyJ9qb6uaJQaE2iZMqvOVAntZ6cRyZgRg/exec';
-const form = document.forms['orderForm'];
+var $form = $('form#orderForm'),
+    url = 'https://script.google.com/macros/s/AKfycbyzHZyynvDl8gcTHJyJ9qb6uaJQaE2iZMqvOVAntZ6cRyZgRg/exec'
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    try{
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then( response => {
-            alert('successfully posted');
-            console.log('Success!', response);
-        }, cause => {
-            console.log('cause?', cause);
-        })
-        .catch(error => console.error('Error!', error.message))
-    } catch (err) {
-        console.log("err", err.message);
-    }
-    
-});
+$('#orderForm').on('submit', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).done( function() {
+    alert('success!');
+  });
+})
