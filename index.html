@@ -53,7 +53,7 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/chaice cream logo.svg" style="margin-top: 10px" alt="alternative"></a> 
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/chaice cream logo.svg" alt="alternative"></a> 
             
             <!-- Mobile Menu Toggle Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +72,7 @@
                     </li>
                 </ul>
                 <span class="nav-item">
-                    <a class="btn-outline-sm" href="log-in.html">ORDER NOW!</a>
+                    <a class="btn-outline-sm" href="" data-toggle="modal" data-target="#modalLoginForm">ORDER NOW!</a>
                 </span>
             </div>
         </div> <!-- end of container -->
@@ -126,7 +126,7 @@
                                 <div class="media-body"><strong>Biscoff Crumble - $4.99 (coming soon!)</strong></div>
                             </li>
                         </ul>
-                        <a class="btn-solid-reg page-scroll" href="sign-up.html">I NEED IT!</a>
+                        <a class="btn-solid-reg page-scroll" href="" data-toggle="modal" data-target="#modalLoginForm">I NEED IT!</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
@@ -237,7 +237,7 @@
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-instagram"></i>
-                                <div class="media-body">@chaice.cream</div>
+                                <div class="media-body"><a class="white" href="https://www.instagram.com/chaice.cream/">@chaice.cream</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-envelope"></i>
@@ -245,7 +245,7 @@
                             </li>
                             <li class="media">
                                 <i class="fas fa-globe"></i>
-                                <div class="media-body"><a class="white" href="thechaicecream.com">thechaicecream.com</a> </div>
+                                <div class="media-body"><a class="white" href="www.thechaicecream.com">thechaicecream.com</a> </div>
                             </li>
                         </ul>
                     </div> 
@@ -261,66 +261,75 @@
     <div class="modal-dialog" role="document">
         <form id="orderForm" name="orderForm">
         <div class="modal-content">
+            
             <div class="modal-header text-center">
                 <h4 class="modal-title w-100 font-weight-bold">Order your Chaice Cream</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+
             <div class="modal-body mx-3">
-                <div class="md-form mb-5">
-                    <i class="fas fa-user prefix grey-text"></i> <label data-error="wrong" data-success="right" for="name">Full name</label>
-                    <input type="text" id="name" name="name" class="form-control validate">
-                </div>
+                <div class="form-body">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i> <label data-error="wrong" data-success="right" for="name">Full name</label>
+                        <input type="text" id="name" name="name" class="form-control validate">
+                    </div>
 
-                <div class="md-form mb-5">
-                <i class="fas fa-envelope prefix grey-text"></i> <label data-error="wrong" data-success="right" for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-control validate">
-                </div>
+                    <div class="md-form mb-5">
+                    <i class="fas fa-envelope prefix grey-text"></i> <label data-error="wrong" data-success="right" for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control validate">
+                    </div>
 
-                <div class="md-form mb-4">
-                    <i class="fas fa-hashtag prefix grey-text"></i> <label data-error="wrong" data-success="right" for="pints">How many pints of Chaice cream would you like?</label>
-                    <input type="number" id="pints" name="pints" class="form-control validate" value="1" min="1">
-                </div>
+                    <div class="md-form mb-4">
+                        <i class="fas fa-hashtag prefix grey-text"></i> <label data-error="wrong" data-success="right" for="pints">How many pints of Chaice cream would you like?</label>
+                        <input type="number" id="pints" name="pints" class="form-control validate" value="1" min="1">
+                    </div>
 
-                <div class="md-form mb-4">
-                <i class="fas fa-car prefix grey-text"></i> <label data-error="wrong" data-success="right" for="defaultForm-pickup">Pick up or Delivery?</label>
-                <div class="form-check">
-                    <input class="form-check-input delivery-option" type="radio" name="fullfillment" id="pickup" value="pickup" checked>
-                    <label class="form-check-label pickuplabel" for="pickup">
-                      Pick up in Redmond, WA ($4.99 total)
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input delivery-option" type="radio" name="fullfillment" id="delivery" value="delivery">
-                    <label class="form-check-label deliverylabel" for="delivery">
-                        Fresh home delivery ($9.99 total)
-                    </label>
-                </div>
-                </div>
+                    <div class="md-form mb-4">
+                    <i class="fas fa-car prefix grey-text"></i> <label data-error="wrong" data-success="right" for="defaultForm-pickup">Pick up or Delivery?</label>
+                    <div class="form-check">
+                        <input class="form-check-input delivery-option" type="radio" name="fullfillment" id="pickup" value="pickup" checked>
+                        <label class="form-check-label pickuplabel" for="pickup">
+                        Pick up in Redmond, WA ($4.99 total)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input delivery-option" type="radio" name="fullfillment" id="delivery" value="delivery">
+                        <label class="form-check-label deliverylabel" for="delivery">
+                            Fresh home delivery ($9.99 total)
+                        </label>
+                    </div>
+                    </div>
 
-                <div class="md-form mb-5 location-select hidden">
-                    <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="location">Where are you located?</label>
-                    <div class="form-group">
-                        <select class="form-control" id="location" name="location">
-                          <option>Seattle</option>
-                          <option>Bellevue</option>
-                          <option>Redmond</option>
-                          <option>Renton</option>
-                          <option>Bothel</option>
-                          <option>Kirkland</option>
-                          <option>Woodinville</option>
-                          <option>Lynwood</option>
-                          <option>Sammamish</option>
-                          <option>Issaquah</option>
-                          <option>Kent</option>
-                          <option>Auburn</option>
-                          <option>Mercer Island</option>
-                          <option>Other</option>
-                        </select>
-                      </div>
+                    <div class="md-form mb-5 location-select hidden">
+                        <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="location">Where are you located?</label>
+                        <div class="form-group">
+                            <select class="form-control" id="location" name="location">
+                            <option>Seattle</option>
+                            <option>Bellevue</option>
+                            <option>Redmond</option>
+                            <option>Renton</option>
+                            <option>Bothel</option>
+                            <option>Kirkland</option>
+                            <option>Woodinville</option>
+                            <option>Lynwood</option>
+                            <option>Sammamish</option>
+                            <option>Issaquah</option>
+                            <option>Kent</option>
+                            <option>Auburn</option>
+                            <option>Mercer Island</option>
+                            <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!-- End form body -->
+                <div class="thank-you-body hidden">
+                    <p>Thank you for ordering from us <i class="fas fa-heart"></i></p>
+                    <p>Our operation is very small, and we are preparing your order now!</p>
+                    <p>We manage our orders through emails and messages - please check your email to coordinate payment and pickup/delivery.</p>
+                    <p>Thanks again for ordering and supporting our small business :)</p>
                 </div>
-            
             </div><!-- End modal body-->
             <div class="modal-footer d-flex justify-content-center">
                 <button type="submit" id="submit-form" class="btn btn-primary checkoutbtn">$5.99 total - Check out</button>
