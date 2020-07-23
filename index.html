@@ -277,8 +277,8 @@
                     </div>
 
                     <div class="md-form mb-5">
-                    <i class="fas fa-envelope prefix grey-text"></i> <label data-error="wrong" data-success="right" for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control validate" required>
+                        <i class="fas fa-envelope prefix grey-text"></i> <label data-error="wrong" data-success="right" for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control validate" required>
                     </div>
 
                     <div class="md-form mb-4">
@@ -301,28 +301,49 @@
                         </label>
                     </div>
                     </div>
-
-                    <div class="md-form mb-5 location-select hidden">
-                        <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="location">Where are you located?</label>
-                        <div class="form-group">
-                            <select class="form-control" id="location" name="location">
-                            <option>Seattle</option>
-                            <option>Bellevue</option>
-                            <option>Redmond</option>
-                            <option>Renton</option>
-                            <option>Bothel</option>
-                            <option>Kirkland</option>
-                            <option>Woodinville</option>
-                            <option>Lynwood</option>
-                            <option>Sammamish</option>
-                            <option>Issaquah</option>
-                            <option>Kent</option>
-                            <option>Auburn</option>
-                            <option>Mercer Island</option>
-                            <option>Other</option>
-                            </select>
+                    
+                    <div class="location-select hidden">
+                        <div class="md-form mb-4">
+                            <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="address">Where are you located?</label>
+                            <input type="text" id="address" name="address" class="form-control validate" placeholder="Address line 1">
+                            <input type="text" id="address2" name="address2" class="form-control validate" placeholder="Address line 2">
                         </div>
-                    </div>
+                        
+                        <div class="md-form mb-5">
+                            <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="city">City - we deliver within 30 miles of Bellevue</label>
+                            <div class="form-group">
+                                <select class="form-control" id="city" name="city">
+                                    <option>Seattle</option>
+                                    <option>Bellevue</option>
+                                    <option>Redmond</option>
+                                    <option>Renton</option>
+                                    <option>Bothel</option>
+                                    <option>Kirkland</option>
+                                    <option>Woodinville</option>
+                                    <option>Lynwood</option>
+                                    <option>Sammamish</option>
+                                    <option>Issaquah</option>
+                                    <option>Kent</option>
+                                    <option>Auburn</option>
+                                    <option>Mercer Island</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <input type="text" id="zip" name="zip" class="form-control validate" placeholder="Zip code">
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="day" id="day-label">Which day will you be available to receive the pint at the above address? We deliver in the evenings.</label>
+                            <div class="form-group">
+                                <select class="form-control" id="day" name="day">
+                                    <option>Sunday</option>
+                                    <option>Tuesday</option>
+                                    <option>Thursday</option>
+                                    <option>Saturday</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- End location select -->
+
                 </div><!-- End form body -->
                 <div class="thank-you-body hidden">
                     <p>Thank you for ordering from us <i class="fas fa-heart"></i></p>
