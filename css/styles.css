@@ -30,7 +30,7 @@ Table Of Contents:
 
 /*****************************************
 Colors:
-- Backgrounds, buttons, bullets, icons - blue #D782BA
+- Backgrounds, buttons, bullets, icons - blue #F97EB4
 - Backgrounds, light button, light body text - light gray #f3f7fd
 - Headings text - black #333
 - Body text - dark gray #555
@@ -97,7 +97,7 @@ h6 {
 }
 
 .above-heading {
-	color: #D782BA;
+	color: #F97EB4;
 	font: 700 0.75rem/0.875rem "Open Sans", sans-serif;
 	text-align: center;
 }
@@ -146,15 +146,15 @@ a.white {
 }
 
 .blue {
-	color: #D782BA;
+	color: #F97EB4;
 }
 
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #D782BA;
+	border: 0.125rem solid #F97EB4;
 	border-radius: 2rem;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	color: #fff;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
@@ -163,16 +163,16 @@ a.white {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #D782BA;
+	color: #F97EB4;
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #D782BA;
+	border: 0.125rem solid #F97EB4;
 	border-radius: 2rem;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	color: #fff;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
@@ -181,24 +181,24 @@ a.white {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #D782BA;
+	color: #F97EB4;
 	text-decoration: none;
 }
 
 .btn-outline-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #D782BA;
+	border: 0.125rem solid #F97EB4;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #D782BA;
+	color: #F97EB4;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-reg:hover {
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	color: #fff;
 	text-decoration: none;
 }
@@ -206,17 +206,17 @@ a.white {
 .btn-outline-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #D782BA;
+	border: 0.125rem solid #F97EB4;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #D782BA;
+	color: #F97EB4;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-lg:hover {
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	color: #fff;
 	text-decoration: none;
 }
@@ -224,17 +224,17 @@ a.white {
 .btn-outline-sm {
 	display: inline-block;
 	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
-	border: 0.125rem solid #D782BA;
+	border: 0.125rem solid #F97EB4;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #D782BA;
+	color: #F97EB4;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
 }
 
 .btn-outline-sm:hover {
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	color: #fff;
 	text-decoration: none;
 }
@@ -382,9 +382,9 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.125rem;
-	border: 1px solid #D782BA;
+	border: 1px solid #F97EB4;
 	border-radius: 1.5rem;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	color: #fff;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	cursor: pointer;
@@ -393,7 +393,7 @@ input[type='checkbox'] {
 
 .form-control-submit-button:hover {
 	background-color: transparent;
-	color: #D782BA;
+	color: #F97EB4;
 }
 
 /* Form Success And Error Message Formatting */
@@ -613,7 +613,7 @@ input[type='checkbox'] {
 	width: 1rem;
 	height: 1rem;
 	border-radius: 100%;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
@@ -650,7 +650,7 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 700 0.875rem/0.875rem "Open Sans", sans-serif;
 	transition: all 0.2s;
@@ -717,7 +717,7 @@ input[type='checkbox'] {
 	margin-top: 0;
 	border: none;
 	border-radius: 0.25rem;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 }
 
 .navbar-custom .dropdown-item {
@@ -728,7 +728,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover {
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	color: #fff;
 	opacity: 1;
 }
@@ -753,7 +753,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .btn-outline-sm:hover {
 	background-color: #fff;
-	color: #D782BA;
+	color: #F97EB4;
 }
 
 .navbar-custom .navbar-toggler {
@@ -785,7 +785,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background-color: #D782BA;
+	background-color: #F97EB4;
 }
 
 .header .header-content {
@@ -816,7 +816,7 @@ input[type='checkbox'] {
 	margin-left: 0.5rem;
 	border-color: #f3f7fd;
 	background-color: #f3f7fd;
-	color: #D782BA;
+	color: #F97EB4;
 }
 
 .header .btn-solid-lg:hover {
@@ -831,7 +831,7 @@ input[type='checkbox'] {
 
 .header .btn-outline-lg:hover {
 	background-color: #f3f7fd;
-	color: #D782BA;
+	color: #F97EB4;
 }
 
 .header-frame {
@@ -858,7 +858,7 @@ input[type='checkbox'] {
 }
 
 .basic-1 .list-unstyled .fas {
-	color: #D782BA;
+	color: #F97EB4;
 	font-size: 0.5rem;
 	line-height: 1.625rem;
 }
@@ -939,7 +939,7 @@ input[type='checkbox'] {
 .footer {
 	padding-top: 3rem;
 	padding-bottom: 0.5rem;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 }
 
 .footer .footer-col {
@@ -988,7 +988,7 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 0.375rem;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	text-align: center;
 }
 
@@ -1032,7 +1032,7 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 8rem;
 	padding-bottom: 5rem;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	text-align: center;
 }
 
@@ -1090,7 +1090,7 @@ a:hover.back-to-top {
 }
 
 .ex-basic-2 .list-unstyled .fas {
-	color: #D782BA;
+	color: #F97EB4;
 	font-size: 0.5rem;
 	line-height: 1.625rem;
 }
@@ -1119,7 +1119,7 @@ a:hover.back-to-top {
 /****************************************/
 .ex-2-header {
 	padding-top: 9rem;
-	background-color: #D782BA;
+	background-color: #F97EB4;
 	text-align: center;
 	min-height: 100vh;
 }
@@ -1279,7 +1279,7 @@ a:hover.back-to-top {
 
 	.navbar-custom.top-nav-collapse {
         padding: 0.5rem 1.5rem 0.5rem 2rem;
-		background-color: #D782BA;
+		background-color: #F97EB4;
 		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	}
 
@@ -1386,7 +1386,7 @@ a:hover.back-to-top {
 	
 	.tabs .nav-link:hover,
 	.tabs .nav-link.active {
-		border-bottom: 2px solid #D782BA;
+		border-bottom: 2px solid #F97EB4;
 	}
 
 	.tabs .image-container {
