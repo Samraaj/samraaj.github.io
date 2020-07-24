@@ -34,6 +34,7 @@ function onOrderSuccess() {
 //https://script.google.com/macros/s/AKfycbyzHZyynvDl8gcTHJyJ9qb6uaJQaE2iZMqvOVAntZ6cRyZgRg/exec
 //https://script.google.com/macros/s/AKfycbzAW2FJ78xNjK8pwl6WS82o2LDq_kdiMUNDrewgRzixrKCZy3yk/exec
 //https://script.google.com/macros/s/AKfycbxaJM9jVrG7N6UYNM7BaGJL4S_vdsR9t8Xl_kW3_Q/exec
+//https://script.google.com/macros/s/AKfycbxaJM9jVrG7N6UYNM7BaGJL4S_vdsR9t8Xl_kW3_Q/exec
 
 var $form = $('form#orderForm'),
     url = 'https://script.google.com/macros/s/AKfycbxaJM9jVrG7N6UYNM7BaGJL4S_vdsR9t8Xl_kW3_Q/exec'
