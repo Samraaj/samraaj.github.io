@@ -21,7 +21,7 @@ function updateTotal() {
     $('.pickuplabel').text('Pick up in Redmond, WA ($' + baseTotal + ' total)');
     $('.deliverylabel').text('Fresh home delivery ($' + deliveryTotal + ' total)');
     $('.checkoutbtn').text('$' + total + ' total - Check out');
-    $('#venmo-link').text('$' + total + ' to our venmo');
+    $('#venmo-link').text('$' + total + ' to @Samraaj-Bath on venmo');
 }
 
 function onOrderSuccess() {
