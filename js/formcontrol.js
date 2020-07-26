@@ -20,8 +20,8 @@ function updateTotal() {
 
     $('.pickuplabel').text('Pick up in Redmond, WA ($' + baseTotal + ' total)');
     $('.deliverylabel').text('Fresh home delivery ($' + deliveryTotal + ' total)');
-    $('.checkoutbtn').text('$' + total.toFixed(2) + ' total - Check out');
-    $('#venmo-link').text('$' + total.toFixed(2) + ' to our venmo');
+    $('.checkoutbtn').text('$' + total + ' total - Check out');
+    $('#venmo-link').text('$' + total + ' to our venmo');
 }
 
 function onOrderSuccess() {
