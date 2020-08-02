@@ -72,7 +72,7 @@
                     </li>
                 </ul>
                 <span class="nav-item">
-                    <a class="btn-outline-sm" href="" data-toggle="modal" data-target="#modalLoginForm">JOIN WAITLIST!</a>
+                    <a class="btn-outline-sm" href="" data-toggle="modal" data-target="#modalLoginForm">Order Now!</a>
                 </span>
             </div>
         </div> <!-- end of container -->
@@ -89,7 +89,7 @@
                         <div class="text-container">
                             <h1>The flavors of India infused into Ice Cream</h1>
                             <p class="p-large">Artisan <i>Cha</i> (also known as <i>Chai</i>) flavored ice cream. Delivered with <i class="fas fa-heart"></i> in Seattle.</p>
-                            <a class="btn-solid-lg submit-btn page-scroll" href="" data-toggle="modal" data-target="#modalLoginForm">Join waitlist</a>
+                            <a class="btn-solid-lg submit-btn page-scroll" href="" data-toggle="modal" data-target="#modalLoginForm">I want!</a>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6 col-xl-7">
@@ -257,7 +257,7 @@
         <div class="modal-content">
             
             <div class="modal-header text-center">
-                <h4 class="modal-title w-100 font-weight-bold">Join our waitlist!</h4>
+                <h4 class="modal-title w-100 font-weight-bold">Order your Chaice Cream</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -265,14 +265,20 @@
 
             <div class="modal-body mx-3">
                 <div class="form-body">
-                    <div class="sold-out-body">
+                    <div class="sold-out-body hidden">
                         <p>We are officially SOLD OUT!</p>
                         <p>Our first release of Chaice Cream sold out in just two days! Thank you so much for your support <i class="fas fa-heart"></i></p>
                         <p>Don't worry - we will be dropping limited batches of Chaice Cream every few weeks! Orders will be processed on a first-come-first-serve basis.</p>
                         <p>Join our waitlist for exclusive access to a scoop during our next drop!</p>
                     </div>
+
                     <div class="md-form mb-5">
-                        <i class="fas fa-user prefix grey-text"></i> <label data-error="wrong" data-success="right" for="name">Full name</label>
+                        <i class="fas fa-gift prefix grey-text"></i> <label data-error="wrong" data-success="right" for="carepackage">Do you want to order a Rakhri care package?</label>
+                        <input class="form-control validate" type="checkbox" name="carepackage" value="yes" id="carepackage">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i> <label data-error="wrong" data-success="right" for="name">Your name</label>
                         <input type="text" id="name" name="name" class="form-control validate" required>
                     </div>
 
@@ -280,86 +286,64 @@
                         <i class="fas fa-envelope prefix grey-text"></i> <label data-error="wrong" data-success="right" for="email">Email</label>
                         <input type="email" id="email" name="email" class="form-control validate" required>
                     </div>
-                    <div class="hidden">
+
+                    <div class="more-info">
                         <div class="md-form mb-4">
                             <i class="fas fa-hashtag prefix grey-text"></i> <label data-error="wrong" data-success="right" for="pints">How many pints of Chaice cream would you like?</label>
-                            <input type="number" id="pints" name="pints" class="form-control validate" value="0" min="0" required>
+                            <input type="number" id="pints" name="pints" class="form-control validate" value="1" min="1" required>
                         </div>
-    
+
                         <div class="md-form mb-4">
-                        <i class="fas fa-car prefix grey-text"></i> <label data-error="wrong" data-success="right" for="defaultForm-pickup">Pick up or Delivery?</label>
-                        <div class="form-check">
-                            <input class="form-check-input delivery-option" type="radio" name="fullfillment" id="pickup" value="pickup" checked>
-                            <label class="form-check-label pickuplabel" for="pickup">
-                            Pick up in Redmond, WA ($4.99 total)
-                            </label>
+                            <i class="fas fa-car prefix grey-text"></i> <label data-error="wrong" data-success="right" for="defaultForm-pickup">Pick up or Delivery?</label>
+                            <div class="form-check">
+                                <input class="form-check-input delivery-option" type="radio" name="fullfillment" id="pickup" value="pickup" checked>
+                                <label class="form-check-label pickuplabel" for="pickup">
+                                Pick up in Redmond, WA ($4.99 total)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input delivery-option" type="radio" name="fullfillment" id="delivery" value="delivery">
+                                <label class="form-check-label deliverylabel" for="delivery">
+                                    Fresh home delivery ($9.99 total)
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input delivery-option" type="radio" name="fullfillment" id="delivery" value="delivery">
-                            <label class="form-check-label deliverylabel" for="delivery">
-                                Fresh home delivery ($9.99 total)
-                            </label>
-                        </div>
-                        </div>
-                    </div> <!-- hidden -->
+                    </div>
                     
                     <div class="location-select hidden">
                         <div class="md-form mb-4">
-                            <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="address">Where are you located?</label>
+                            <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="address">Delivery address? Stay within 30 miles of Bellevue</label>
                             <input type="text" id="address" name="address" class="form-control validate" placeholder="Address line 1">
                             <input type="text" id="address2" name="address2" class="form-control validate" placeholder="Address line 2">
-                        </div>
-                        
-                        <div class="md-form mb-5">
-                            <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="city">City - we deliver within 30 miles of Bellevue</label>
-                            <div class="form-group">
-                                <select class="form-control" id="city" name="city">
-                                    <option>Seattle</option>
-                                    <option>Bellevue</option>
-                                    <option>Redmond</option>
-                                    <option>Renton</option>
-                                    <option>Bothel</option>
-                                    <option>Kirkland</option>
-                                    <option>Woodinville</option>
-                                    <option>Lynwood</option>
-                                    <option>Sammamish</option>
-                                    <option>Issaquah</option>
-                                    <option>Kent</option>
-                                    <option>Auburn</option>
-                                    <option>Mercer Island</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                            <input type="text" id="zip" name="zip" class="form-control validate" placeholder="Zip code">
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-city prefix grey-text"></i> <label data-error="wrong" data-success="right" for="day" id="day-label">Which day will you be available to receive the pint at the above address? We deliver in the evenings.</label>
-                            <div class="form-group">
-                                <select class="form-control" id="day" name="day">
-                                    <option>Monday</option>
-                                    <option>Wednesday</option>
-                                    <option>Friday</option>
-                                    <option>Saturday</option>
-                                    <option>Sunday</option>
-                                </select>
-                            </div>
+                            <input type="text" id="city" name="city" class="form-control validate" placeholder="City">
                         </div>
                     </div><!-- End location select -->
 
+                    <div class="rakhri-note hidden">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i> <label data-error="wrong" data-success="right" for="recipient">Who is this care package for?</label>
+                            <input type="text" id="recipient" name="recipient" class="form-control validate">
+                        </div>
+                        <div class="md-form mb-4">
+                            <i class="fas fa-pen prefix grey-text"></i> <label data-error="wrong" data-success="right" for="rakhrinote">Personal Rakhri Note</label>
+                            <textarea class="form-control" id="rakhrinote" maxlength="300" name="rakhrinote" rows="3"></textarea>
+                        </div>
+                    </div>
+
                 </div><!-- End form body -->
                 <div class="thank-you-body hidden">
-                    <p>Thank you for joining the waitlist <i class="fas fa-heart"></i></p>
+                    <!-- <p>Thank you for joining the waitlist <i class="fas fa-heart"></i></p>
                     <p>To hear about new flavors, new locations, and other exciting updates, follow us on Instagram: <a href="https://www.instagram.com/TheChaiceCream/">@TheChaiceCream</a></p>
-                    <p>If you have any questions, please contact <a href="mailto:thechaicecream@gmail.com">thechaicecream@gmail.com</a> or (206) 659-7040</p>
-                    <!-- <p>Thank you for ordering from us <i class="fas fa-heart"></i></p>
+                    <p>If you have any questions, please contact <a href="mailto:thechaicecream@gmail.com">thechaicecream@gmail.com</a> or (206) 659-7040</p> -->
+                    <p>Thank you for ordering from us <i class="fas fa-heart"></i></p>
                     <p>Your order is now pending - we will prepare your fresh pint once you pay through venmo or confirm an alternative payment method.</p>
                     <p>We have sent you an email with your order details, total, and payment info. If you didn't receive an email, please reach out to <a href="mailto:thechaicecream@gmail.com">thechaicecream@gmail.com</a> or (206) 659-7040</p>
                     <p>Confirm your order now by sending <a id="venmo-link" href="https://venmo.com/Samraaj-Bath" target="_blank">$5.99 to @Samraaj-Bath on venmo</a>. If you'd like to pay another way, respond to our email!</p>
-                    <p>Thanks again for ordering and supporting our small business :). Please reach out if you have any other questions!</p> -->
+                    <p>Thanks again for ordering and supporting our small business :). Please reach out if you have any other questions!</p>
                 </div>
             </div><!-- End modal body-->
             <div class="modal-footer d-flex justify-content-center">
-                <button type="submit" id="submit-form" class="btn btn-primary checkoutbtn">Join</button>
+                <button type="submit" id="submit-form" class="btn btn-primary checkoutbtn">$4.99 total - Check out</button>
             </div>
         </div> <!-- End of modal content -->
         </form>

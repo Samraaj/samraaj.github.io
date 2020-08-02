@@ -7,6 +7,22 @@ $('#pints').change(function() {
     updateTotal();
 });
 
+$('#carepackage').change(function() {
+    if(this.checked) {
+        $('.more-info').toggleClass('hidden');
+        $('.location-select').toggleClass('hidden');
+        $('.rakhri-note').toggleClass('hidden');
+        $('.checkoutbtn').text('$15 total - Check out');
+        $('#venmo-link').text('$15 to @Samraaj-Bath on venmo');
+    } else {
+        $('.more-info').toggleClass('hidden');
+        $('.location-select').toggleClass('hidden');
+        $('.rakhri-note').toggleClass('hidden');
+        updateTotal();
+    }
+            
+});
+
 function updateTotal() {
     let pints = $('#pints').prop('value');
     let delivery = $('#delivery').prop('checked');
@@ -16,6 +32,8 @@ function updateTotal() {
     let deliveryTotal = (total + 5.0).toFixed(2);
     if (delivery) {
         total = deliveryTotal;
+    } else {
+        total = baseTotal;
     }
 
     $('.pickuplabel').text('Pick up in Redmond, WA ($' + baseTotal + ' total)');
