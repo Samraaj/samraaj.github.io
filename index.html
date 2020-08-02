@@ -272,9 +272,25 @@
                         <p>Join our waitlist for exclusive access to a scoop during our next drop!</p>
                     </div>
 
-                    <div class="md-form mb-5">
+                    <!-- <div class="md-form mb-5">
                         <i class="fas fa-gift prefix grey-text"></i> <label data-error="wrong" data-success="right" for="carepackage">Do you want to order a Rakhri care package?</label>
                         <input class="form-control validate" type="checkbox" name="carepackage" value="yes" id="carepackage" onclick="rakhriClick();">
+                    </div> -->
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-gift prefix grey-text"></i> <label data-error="wrong" data-success="right" for="carepackage">Do you want to order a Rakhri care package?</label>
+                        <div class="form-check">
+                            <input class="form-check-input carepackage-option" type="radio" name="carepackage" id="carepackage-yes" value="yes">
+                            <label class="form-check-label" for="yes">
+                                Yes, I'd love to order a care package!
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input carepackage-option" type="radio" name="carepackage" id="carepackage-no" value="no" checked>
+                            <label class="form-check-label" for="no">
+                                No, I want a regular order
+                            </label>
+                        </div>
                     </div>
 
                     <div class="md-form mb-5">

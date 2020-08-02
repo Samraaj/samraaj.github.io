@@ -7,13 +7,15 @@ $('#pints').change(function() {
     updateTotal();
 });
 
-
+$('.carepackage-option').change(function() {
+    rakhriClick();
+});
 // $('#carepackage').change(function() {
 //     rakhriClick();
 // });
 
 function rakhriClick() {
-    if($('#carepackage').prop('checked')) {
+    if($('#carepackage-yes').prop('checked')) {
         $('.more-info').toggleClass('hidden');
         $('.location-select').toggleClass('hidden');
         $('.rakhri-note').toggleClass('hidden');
