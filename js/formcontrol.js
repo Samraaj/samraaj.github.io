@@ -7,8 +7,13 @@ $('#pints').change(function() {
     updateTotal();
 });
 
-$('#carepackage').change(function() {
-    if(this.checked) {
+
+// $('#carepackage').change(function() {
+//     rakhriClick();
+// });
+
+function rakhriClick() {
+    if($('#carepackage').prop('checked')) {
         $('.more-info').toggleClass('hidden');
         $('.location-select').toggleClass('hidden');
         $('.rakhri-note').toggleClass('hidden');
@@ -20,8 +25,7 @@ $('#carepackage').change(function() {
         $('.rakhri-note').toggleClass('hidden');
         updateTotal();
     }
-            
-});
+}
 
 function updateTotal() {
     let pints = $('#pints').prop('value');
