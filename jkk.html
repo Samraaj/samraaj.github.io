@@ -71,9 +71,6 @@
                         <a class="nav-link page-scroll" href="#details">ABOUT</a>
                     </li>
                 </ul>
-                <span class="nav-item">
-                    <a class="btn-outline-sm" href="" data-toggle="modal" data-target="#modalLoginForm">Order Now!</a>
-                </span>
             </div>
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
@@ -89,7 +86,7 @@
                         <div class="text-container">
                             <h1>Happy Birthday to the Dopest Girl Around</h1>
                             <p class="p-large">Wishing you the greatest birthday of all time Jaskiran! <i class="fas fa-heart"></i></p>
-                            <a class="btn-solid-lg submit-btn page-scroll" href="" data-toggle="modal" data-target="#modalLoginForm">Sing to me!</a>
+                            <a class="btn-solid-lg submit-btn page-scroll" onclick="playAudio()">Sing to me!</a>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6 col-xl-7">
@@ -130,7 +127,7 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/cardamom.jpeg" alt="alternative">
+                        <img class="img-fluid" src="images/jaskiran_selfie.PNG" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -153,8 +150,8 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">The ice cream had a perfect balance of authentic Indian chai flavors and sweetness. Would 100% recommend to any chai or ice cream lover!</div>
-                                        <div class="testimonial-author">@Keshav J</div>
+                                        <div class="testimonial-text">Have a fuckn sick ass birthday kill that shit</div>
+                                        <div class="testimonial-author">- Samraaj</div>
                                     </div> <!-- end of text-wrapper -->
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
@@ -162,8 +159,8 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">The Chaicecream was exactly what I didn’t know I needed. It’s the perfect amount of sweet but also literally could replace my daily cup of chai. I would highly recommend for someone that loves Indian sweets and wants to try something new!</div>
-                                        <div class="testimonial-author">@Tasha M</div>
+                                        <div class="testimonial-text">HAHA I'm so cute</div>
+                                        <div class="testimonial-author">- Jaskiran</div>
                                     </div> <!-- end of text-wrapper -->
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
@@ -171,8 +168,8 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">It's light and refreshing, but not too creamy or sweet. Like masala chai, but perfect for hot summer days.</div>
-                                        <div class="testimonial-author">@Ashim J</div>
+                                        <div class="testimonial-text">An evening spent talking to Jaskiran is the ideal, and the best way to go to sleep. She is certified dope.</div>
+                                        <div class="testimonial-author">- Samraaj</div>
                                     </div> <!-- end of text-wrapper -->
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
@@ -180,8 +177,8 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">This Chaice cream was delicious!! It tastes rich, creamy, and has the best lingering taste of cardamom, which I loved! I’m planning on having this a lot more this summer, can’t wait!</div>
-                                        <div class="testimonial-author">@Karen G</div>
+                                        <div class="testimonial-text">Jaskiran liked her own message</div>
+                                        <div class="testimonial-author">- iPhone</div>
                                     </div> <!-- end of text-wrapper -->
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
@@ -211,15 +208,15 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col middle">
-                        <h4>How to order</h4>
+                        <h4>How to enjoy</h4>
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Fill out our order request form with your email and location.</div>
+                                <div class="media-body">Can be enjoyed by Samraaj by simply hitting the facetime button on the phone</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Our team will follow up with you for your order details and delivery information.</div>
+                                <div class="media-body">Samraaj will probably be doing this while on facetime</div>
                             </li>
                         </ul>
                     </div>
@@ -248,6 +245,22 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
     
+    <audio id="myAudio">
+        <source src="images/hbdjaskiran.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <script>
+        var x = document.getElementById("myAudio"); 
+        
+        function playAudio() { 
+          x.play(); 
+        } 
+        
+        function pauseAudio() { 
+          x.pause(); 
+        } 
+    </script>
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
